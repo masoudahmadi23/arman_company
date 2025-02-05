@@ -16,13 +16,13 @@ function Example() {
 
   useEffect(() => {
     const updateWidth = () => {
-      setSlideWidth(window.innerWidth < 500 ? 300 : 500);
+      setSlideWidth(window.innerWidth < 500 ? window.innerWidth * 0.8 : 500); // درصدی تنظیم کنید
     };
 
     updateWidth();
     window.addEventListener("resize", updateWidth);
 
-    return () => window.removeEventListener("resize", updateWidth); 
+    return () => window.removeEventListener("resize", updateWidth);
   }, []);
 
   return (
@@ -47,60 +47,15 @@ function Example() {
           modules={[EffectCoverflow, Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide
-            className={styles.swip}
-            style={{ width: `${slideWidth}px` }}
-          >
-            <Image src={banner} alt="Banner" />
-          </SwiperSlide>
-          <SwiperSlide
-            className={styles.swip}
-            style={{ width: `${slideWidth}px` }}
-          >
-            <Image src={banner} alt="Banner" />
-          </SwiperSlide>
-          <SwiperSlide
-            className={styles.swip}
-            style={{ width: `${slideWidth}px` }}
-          >
-            <Image src={banner} alt="Banner" />
-          </SwiperSlide>
-          <SwiperSlide
-            className={styles.swip}
-            style={{ width: `${slideWidth}px` }}
-          >
-            <Image src={banner} alt="Banner" />
-          </SwiperSlide>
-          <SwiperSlide
-            className={styles.swip}
-            style={{ width: `${slideWidth}px` }}
-          >
-            <Image src={banner} alt="Banner" />
-          </SwiperSlide>
-          <SwiperSlide
-            className={styles.swip}
-            style={{ width: `${slideWidth}px` }}
-          >
-            <Image src={banner} alt="Banner" />
-          </SwiperSlide>
-          <SwiperSlide
-            className={styles.swip}
-            style={{ width: `${slideWidth}px` }}
-          >
-            <Image src={banner} alt="Banner" />
-          </SwiperSlide>
-          <SwiperSlide
-            className={styles.swip}
-            style={{ width: `${slideWidth}px` }}
-          >
-            <Image src={banner} alt="Banner" />
-          </SwiperSlide>
-          <SwiperSlide
-            className={styles.swip}
-            style={{ width: `${slideWidth}px` }}
-          >
-            <Image src={banner} alt="Banner" />
-          </SwiperSlide>
+          {[...Array(9)].map((_, index) => (
+            <SwiperSlide
+              key={index}
+              className={styles.swip}
+              style={{ width: `${slideWidth}px` }}
+            >
+              <Image src={banner} alt="Banner" />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>

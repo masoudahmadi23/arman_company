@@ -17,10 +17,17 @@
 
 .swip img {
   width: 100%;
+  object-fit: cover; /* اضافه کردیم تا تصویر به درستی فیت شود */
 }
 
-@media screen and (max-width: 300px) {
+/* برای موبایل */
+@media screen and (max-width: 500px) {
   .container h3 {
     font-size: 25px;
+  }
+
+  .swip {
+    max-width: 90%; /* تغییر اندازه اسلاید */
+    margin: 0 auto;
   }
 }
