@@ -1,0 +1,142 @@
+.container {
+  background: url(../../../../public/images/bg-5.png);
+  background-repeat: no-repeat;
+  background-position: 10px 202px;
+  padding-top: 30px;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  width: 70%;
+}
+
+.right {
+  width: 30%;
+  position: relative;
+}
+
+.box_animation {
+  position: absolute;
+  bottom: 94px;
+  left: -90px;
+  animation: box 2.5s infinite;
+  z-index: 2;
+}
+
+.left img {
+  width: 100%;
+  height: 300px;
+  margin-top: 80px;
+}
+
+.prgrph {
+  color: #6a7c92;
+  line-height: 2em;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.left h2 {
+  font-size: 33px;
+  font-weight: 800;
+}
+
+.left h2 span {
+  color: #a21a4c;
+}
+
+.cntct {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.btnzxcas {
+  display: flex;
+  height: 44px;
+  align-items: center;
+  padding: 5px 28px;
+  background-color: #34b480;
+  border-radius: 35px;
+  color: #fff;
+  border: 1px #9f9f9f solid;
+  transition: ease-in-out 0.5s;
+}
+
+.btnzxcas:hover {
+  background-color: transparent;
+  border: 1px #616161 solid;
+  scale: 1.1;
+  color: #000;
+}
+
+.membersasd {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #52525232;
+}
+
+.membersasd p span {
+  color: #34b480;
+}
+
+@keyframes box {
+  0% {
+    transform: translateX(calc(140% + 20px));
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(calc(15% + 50px));
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(-140% - 20px));
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    flex-wrap: wrap;
+  }
+  .left {
+    width: 71%;
+    margin: auto;
+  }
+  .right {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .left {
+    width: 90%;
+  }
+  .right {
+    display: none;
+  }
+  .left img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .cntct {
+    flex-wrap: wrap;
+  }
+  .btnzxcas {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .left img {
+    height: 150px;
+  }
+}

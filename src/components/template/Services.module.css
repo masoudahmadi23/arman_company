@@ -1,0 +1,13 @@
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.container h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container h1 span {
+  color: #a21a19;
+}

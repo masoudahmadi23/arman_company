@@ -1,0 +1,29 @@
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 80px auto;
+}
+
+.message {
+  color: #31708f;
+  background-color: #d9edf7;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.error {
+  color: #d9534f;
+  background-color: #f2dede;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}

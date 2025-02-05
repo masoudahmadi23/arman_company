@@ -1,0 +1,167 @@
+.container {
+  background-color: #ffffff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin: 40px 0;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.up_sec {
+  display: flex;
+  align-items: center;
+}
+
+.image_sec {
+  width: 30%;
+}
+
+.image_sec img {
+  width: 100%;
+  height: 100%;
+}
+
+.paragraph_sec {
+  width: 100%;
+  text-align: justify;
+  padding: 20px;
+}
+
+.paragraph_sec p {
+  line-height: 2em;
+}
+
+.paragraph_sec h2 {
+  color: #194375;
+}
+
+.servc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.crdsrvc {
+  padding: 20px;
+  transition: all 0.4s ease-in-out;
+  width: 220px;
+  height: 220px;
+}
+
+.crdsrvc:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 5px;
+}
+
+#bttn_detail {
+  color: #194375;
+  border: 1px solid #194375;
+  padding: 5px 10px;
+  margin-top: 15px;
+  background: transparent;
+  cursor: pointer;
+}
+
+#bttn_detail:hover {
+  background-color: #194375;
+  color: white;
+}
+
+/* استایل مدال */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 5px;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modaloverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal.active,
+.modaloverlay.active {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .up_sec {
+    flex-direction: column-reverse;
+  }
+  .servc {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .crdsrvc {
+    width: 45%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .up_sec {
+    text-align: center;
+  }
+
+  .crdsrvc {
+    width: 50%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .modal {
+    width: 90%;
+    height: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .crdsrvc {
+    width: 100%;
+    height: auto;
+  }
+
+  .image_sec {
+    width: 70%;
+  }
+
+  .modal {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .modal h2 {
+    font-size: 18px;
+  }
+
+  .modal p {
+    font-size: 14px;
+  }
+
+  #bttn_detail {
+    font-size: 14px;
+    padding: 5px;
+  }
+}

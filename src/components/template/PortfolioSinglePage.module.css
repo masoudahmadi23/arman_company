@@ -1,0 +1,33 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 1200px;
+  margin: auto;
+  min-width: 480px;
+}
+
+.breadcrumbs__item {
+  text-decoration: none;
+  color: #333;
+  margin: 0 5px;
+  padding: 5px;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.breadcrumbs__item:hover {
+  color: #007bff;
+}
+
+.breadcrumbs__separator {
+  margin: 0 5px;
+  color: #aaa;
+}
+
+@media screen and (max-width: 400px) {
+  .breadcrumbs__item {
+    font-size: 12px;
+  }
+}

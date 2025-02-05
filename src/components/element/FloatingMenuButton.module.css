@@ -1,0 +1,79 @@
+@keyframes come-in {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.floatingContainer {
+  position: fixed;
+  width: 80px;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  margin: 35px 25px;
+  transition: height 0.3s;
+  z-index: 999;
+}
+
+.elementContainer svg {
+  vertical-align: middle;
+}
+
+.floatingButton {
+  width: 65px;
+  height: 65px;
+  background: #2cb3f0;
+  border-radius: 50%;
+  margin: auto;
+  color: white;
+  line-height: 65px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 15px rgba(44, 179, 240, 0.5);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.elementContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.floatElement {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  opacity: 0;
+  animation: come-in 0.4s forwards;
+  transition: transform 0.3s;
+}
+
+.floatElement:hover {
+  transform: scale(1.1);
+}
+
+.floatElement:nth-child(1) {
+  background: #42a5f5;
+  animation-delay: 0.2s;
+}
+
+.floatElement:nth-child(2) {
+  background: #4caf50;
+  animation-delay: 0.4s;
+}
+
+.floatElement:nth-child(3) {
+  background: #ff9800;
+  animation-delay: 0.6s;
+}

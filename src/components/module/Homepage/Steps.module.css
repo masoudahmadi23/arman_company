@@ -1,0 +1,157 @@
+.container {
+  background-image: url(../../../../public//images/bg-2.png);
+  background-size: cover;
+  background-position: top right;
+  padding: 90px 0 40px 0;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  width: 50%;
+}
+
+.right ul {
+  width: 100%;
+}
+
+.one {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#down {
+  margin: 59px 30px;
+  color: #e3e0df;
+  font-size: 33px;
+}
+
+.right ul li {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 80px);
+  margin: 15px 0;
+  box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.1);
+  padding: 17px;
+  background-color: #fff;
+  border-radius: 35px;
+}
+
+.icon_web {
+  background-color: #505dc9;
+  color: #dee1f9;
+  padding: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#web_two {
+  background-color: #ffb74e;
+  color: #ffe9ca;
+}
+
+#web_thre {
+  background-color: #23b28b;
+  color: #c7f7ea;
+}
+
+.icon_web svg {
+  font-size: 33px;
+}
+
+.des {
+  margin: 0 25px;
+}
+
+.des h3 {
+  color: #222;
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.des h3 span {
+  background-color: #dee1f9;
+  color: #505dc9;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#two {
+  background-color: #ffe9ca;
+  color: #ffb74e;
+}
+#thre {
+  background-color: #c7f7ea;
+  color: #23b28b;
+}
+
+.des p {
+  color: #6a7c92;
+  font-size: 15px;
+}
+
+.left {
+  width: 40%;
+}
+
+.left img {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 20px 0 0 0;
+  }
+  .main {
+    flex-wrap: wrap;
+  }
+  .right {
+    width: 70%;
+    margin: auto;
+  }
+  .left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #down {
+    display: none;
+  }
+  .right {
+    width: 90%;
+  }
+
+  .right ul li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .icon_web {
+    margin-bottom: 15px;
+  }
+  .right ul li {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}

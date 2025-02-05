@@ -1,0 +1,26 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container h3 {
+  color: #012b5c;
+  font-size: 33px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.container span {
+  color: #a21a19;
+}
+
+.swip img {
+  width: 100%;
+}
+
+@media screen and (max-width: 300px) {
+  .container h3 {
+    font-size: 25px;
+  }
+}

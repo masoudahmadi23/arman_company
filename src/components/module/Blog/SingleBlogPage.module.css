@@ -1,0 +1,28 @@
+.container {
+  padding: 30px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 10px;
+}
+
+.container p,
+.container ol li,
+.container ul li {
+  color: #6a7c92;
+  line-height: 2em;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+  color: #333 !important;
+}
+
+.container img {
+  width: 100%;
+}
